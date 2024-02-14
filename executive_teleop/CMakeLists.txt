@@ -8,13 +8,13 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(rclpy REQUIRED)
-find_package(jsonloader REQUIRED)
-find_package(config_reader REQUIRED)
-find_package(nodelet REQUIRED)
-find_package(ff_msg REQUIRED)
-find_package(ff_hw_msgs REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(ff_msgs REQUIRED)
 find_package(ff_util REQUIRED)
+find_package(ff_common REQUIRED)
+find_package(gflags REQUIRED)
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -27,5 +27,9 @@ if(BUILD_TESTING)
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
+
+
+add_executable(teleop_tool src/teleop_tool.cc)
+ament_target_dependencies(teleop_tool rclcpp tf2_ros sensor_msgs ff_msgs ff_util ff_common gflags)
 
 ament_package()
