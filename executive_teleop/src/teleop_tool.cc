@@ -19,25 +19,23 @@
 // Command line flags
 #include <gflags/gflags.h>
 #include <gflags/gflags_completions.h>
-
-// Include ROS
+// Include ROS2
 #include "rclcpp/rclcpp.hpp"
 #include <tf2_ros/transform_listener.h>
 
-#include <ff_msgs/msg/AckCompletedStatus.h>
-#include <ff_msgs/msg/AckStamped.h>
-#include <ff_msgs/msg/AckStatus.h>
-#include <ff_msgs/msg/AgentStateStamped.h>
-#include <ff_msgs/msg/CommandArg.h>
-#include <ff_msgs/msg/CommandConstants.h>
-#include <ff_msgs/msg/CommandStamped.h>
-#include <ff_msgs/msg/DockAction.h>
-#include <ff_msgs/msg/DockState.h>
-#include <ff_msgs/msg/FaultState.h>
-#include <ff_msgs/msg/MotionAction.h>
-#include <ff_msgs/msg/PerchState.h>
-#include <ff_util/msg/ff_flight.h>
-#include <ff_common/msg/ff_names.h>
+#include <ff_msgs/msg/ack_completed_status.hpp>
+#include <ff_msgs/msg/ack_status.hpp>
+#include <ff_msgs/msg/agent_state_stamped.hpp>
+#include <ff_msgs/msg/command_arg.h>
+#include <ff_msgs/msg/command_constants.h>
+#include <ff_msgs/msg/command_stamped.h>
+#include <ff_msgs/msg/dock_state.hpp>
+#include <ff_msgs/action/dock.h>
+#include <ff_msgs/msg/fault_state.hpp>
+#include <ff_msgs/msg/motion_state.h>
+#include <ff_msgs/msg/perch_state.hpp>
+#include <ff_util/ff_flight.h>
+#include <ff_common/ff_names.h>
 
 // Gflags
 DEFINE_bool(dock, false, "Send dock command");
