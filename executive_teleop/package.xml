@@ -18,6 +18,8 @@
   <depend>ff_hw_msgs</depend>
   <depend>ff_util</depend>
   <depend>gflags</depend>
+  <depend>geometry_msgs</depend>
+
 
 
   <test_depend>ament_lint_auto</test_depend>

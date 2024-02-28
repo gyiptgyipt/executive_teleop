@@ -13,6 +13,7 @@ find_package(ff_msgs REQUIRED)
 find_package(ff_util REQUIRED)
 find_package(ff_common REQUIRED)
 find_package(gflags REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 
 if(BUILD_TESTING)
@@ -29,10 +30,10 @@ endif()
 
 
 add_executable(teleop_tool src/teleop_tool.cc)
-ament_target_dependencies(teleop_tool rclcpp tf2_ros ff_msgs ff_util ff_common gflags)
+ament_target_dependencies(teleop_tool rclcpp tf2_ros ff_msgs ff_util ff_common gflags geometry_msgs)
 
 install(TARGETS
-  teleop_tool
+  #teleop_tool
   DESTINATION lib/${PROJECT_NAME})
 
 ament_package()
