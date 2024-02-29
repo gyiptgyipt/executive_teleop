@@ -8,6 +8,7 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(ff_msgs REQUIRED)
 find_package(ff_util REQUIRED)
@@ -30,7 +31,7 @@ endif()
 
 
 add_executable(teleop_tool src/teleop_tool.cc)
-ament_target_dependencies(teleop_tool rclcpp tf2_ros ff_msgs ff_util ff_common gflags geometry_msgs)
+ament_target_dependencies(teleop_tool rclcpp tf2_ros tf2 ff_msgs ff_util ff_common gflags geometry_msgs)
 
 install(TARGETS
   #teleop_tool

@@ -16,12 +16,19 @@
  * under the License.
  */
 
+#include <chrono>
+#include <functional>
+#include <memory>
+#include <string>
+
+
 // Command line flags
 #include <gflags/gflags.h>
 #include <gflags/gflags_completions.h>
 // Include ROS2
 #include "rclcpp/rclcpp.hpp"
-// #include <tf2_ros/transform_listener.h>
+
+#include <tf2_ros/transform_listener.h>
 
 #include <ff_msgs/msg/ack_stamped.hpp>
 #include <ff_msgs/msg/ack_completed_status.hpp>
@@ -47,9 +54,6 @@
 
 
 #include "geometry_msgs/msg/transform_stamped.hpp"
-
-
-
 
 // Gflags
 DEFINE_bool(dock, false, "Send dock command");
@@ -88,14 +92,19 @@ bool reset_bias, reset_ekf, set_check_zones, set_face_forward, set_planner;
 bool set_op_limits, send_mob_command, mob_command_finished;
 
 geometry_msgs::msg::TransformStamped tfs;
-rclcpp::Publisher<ff_msgs::msg::CommandStamped>::SharedPtr cmd_pub;
+// rclcpp::Publisher<ff_msgs::msg::CommandStamped>::SharedPtr cmd_pub; //publisher
 
 
 uint8_t modeMove = 0, modeGetInfo = 0;
 
 class executive_teleop : public rclcpp::Node {
 
+public:
+  executive_teleop():Node("simple_move") {
+    cmd_pub = this->create_publisher<ff_msgs::msg::CommandStamped>(TOPIC_COMMAND,10);
+  }
 
+private:
 
 bool Finished() {
   if (!get_face_forward && !get_op_limits && !get_planner && !get_state &&
@@ -608,7 +617,7 @@ void AckCallback(ff_msgs::msg::AckStamped const& ack) {
   }
 }
 
-void MoveFeedbackCallback(ff_msgs::msg:: const& fb) {
+void MoveFeedbackCallback(ff_msgs::action::Motion_FeedbackMessage const& fb) {
   std::cout << '\r' << std::flush;
   std::cout << std::fixed << std::setprecision(2)
     << "pos: x: " << fb.feedback.progress.setpoint.pose.position.x
@@ -621,20 +630,22 @@ void MoveFeedbackCallback(ff_msgs::msg:: const& fb) {
 }
 
 // TODO(Katie) Finish me
-void DockFeedbackCallback(ff_msgs::action::Dock_Feedback const& fb) {
-  if (fb.feedback.state.state > ff_msgs::action::DockState::INITIALIZING) {
+void DockFeedbackCallback(ff_msgs::action::Dock_FeedbackMessage const& fb) {
+  if (fb.feedback.state.state > ff_msgs::msg::DockState::INITIALIZING) {
     std::cout << "Astrobee failed to un/dock and is trying to recover.\n\n";
-  } else if (fb.feedback.state.state < ff_msgs::action::DockState::DOCKED) {
+  } else if (fb.feedback.state.state < ff_msgs::msg::DockState::DOCKED) {
     std::cout << "Undocking " << (fb.feedback.state.state * -1) << " (of " <<
-      ((ff_msgs::action::DockState::UNDOCKING_MAX_STATE * -1) - 1) << ")\n";
-  } else if (fb.feedback.state.state < ff_msgs::action::DockState::UNKNOWN &&
-             fb.feedback.state.state > ff_msgs::action::DockState::DOCKED) {
+      ((ff_msgs::msg::DockState::UNDOCKING_MAX_STATE * -1) - 1) << ")\n";
+  } else if (fb.feedback.state.state < ff_msgs::msg::DockState::UNKNOWN &&
+             fb.feedback.state.state > ff_msgs::msg::DockState::DOCKED) {
     std::cout << "Docking " <<
-      std::to_string((ff_msgs::action::DockState::DOCKING_MAX_STATE -
+      std::to_string((ff_msgs::msg::DockState::DOCKING_MAX_STATE -
       fb.feedback.state.state + 1)) << " (of " <<
-      ff_msgs::action::DockState::DOCKING_MAX_STATE << ")\n";
+      ff_msgs::msg::DockState::DOCKING_MAX_STATE << ")\n";
   }
 }
+
+rclcpp::Publisher<ff_msgs::msg::CommandStamped>::SharedPtr cmd_pub; //publisher
 
 
 };
@@ -642,7 +653,7 @@ void DockFeedbackCallback(ff_msgs::action::Dock_Feedback const& fb) {
 // Main entry point for application
 int main(int argc, char** argv) {
   // Initialize a ros node
-  rclcpp::init(argc, argv, "simple_move", rclcpp::init_options::AnonymousName);
+  rclcpp::init(argc, argv);
 
   // Gather some data from the command
   google::SetUsageMessage("Usage: rosrun executive simple_move <opts>");
@@ -739,18 +750,28 @@ int main(int argc, char** argv) {
   }
 
   // Create a node handle
-  rclcpp::NodeHandle nh(std::string("/") + FLAGS_ns);
+  // rclcpp::NodeHandle nh(std::string("/") + FLAGS_ns);
 
   // TF2 Subscriber
-  tf2_rclcpp::Buffer tf_buffer;
-  tf2_rclcpp::TransformListener tf_listener(tf_buffer);
+  /*auto node = rclcpp::Node::make_shared("simple_move");
+  auto now = node->get_clock()->now();
+  tf2::Duration timeout(static_cast<long int>(10.0));
+  tf2_ros::Buffer tf_buffer(now,timeout,"simple_move");
+  tf2_ros::TransformListener tf_listener(tf_buffer); */
+  tf2_ros::Buffer tf_buffer_;
+  tf2_ros::TransformListener tf_listener(tf_buffer_); 
 
   // Initialize publishers
-  cmd_pub = nh.advertise<ff_msgs::CommandStamped>(TOPIC_COMMAND, 10);
+  // cmd_pub = nh.advertise<ff_msgs::CommandStamped>(TOPIC_COMMAND, 10);
 
   // Initialize subscribers
-  rclcpp::Subscriber ack_sub, agent_state_sub, fault_state_sub, dock_sub, move_sub;
-  ack_sub = nh.subscribe(TOPIC_MANAGEMENT_ACK, 10, &AckCallback);
+  auto node = rclcpp::Node::make_shared("simple_move");
+  // rclcpp::Subscriber ack_sub, agent_state_sub, fault_state_sub, dock_sub, move_sub;
+
+
+
+  ack_sub = node->create_subscription<ff_msgs::msg::AckStamped>(TOPIC_MANAGEMENT_ACK, 10,std::bind(&executive_teleop::AckCallback,node,std::placeholders::_1));
+
 
   // Hacky time out
   int count = 0;
@@ -797,27 +818,28 @@ int main(int argc, char** argv) {
 
   if (FLAGS_get_state || FLAGS_get_face_forward || FLAGS_get_op_limits ||
       FLAGS_get_planner) {
-    agent_state_sub = nh.subscribe(TOPIC_MANAGEMENT_EXEC_AGENT_STATE,
+    agent_state_sub = node->create_subscription<ff_msgs::msg::AgentStateStamped >(TOPIC_MANAGEMENT_EXEC_AGENT_STATE,
                                    10,
-                                   &AgentStateCallback);
+                                   std::bind(&executive_teleop::AgentStateCallback,node,std::placeholders::_1));
+                                    
   }
 
   if (FLAGS_get_faults) {
-    fault_state_sub = nh.subscribe(TOPIC_MANAGEMENT_SYS_MONITOR_STATE,
+    fault_state_sub = node->create_subscription<ff_msgs::msg::FaultState>(TOPIC_MANAGEMENT_SYS_MONITOR_STATE,
                                    10,
-                                   &FaultStateCallback);
+                                    std::bind(&executive_teleop::FaultStateCallback,node,std::placeholders::_1));
   }
 
   if (FLAGS_move) {
     std::string topic_name = ACTION_MOBILITY_MOTION;
     topic_name += "/feedback";
-    move_sub = nh.subscribe(topic_name, 10, &MoveFeedbackCallback);
+    move_sub = node->create_subscription<ff_msgs::action::Motion_FeedbackMessage>(topic_name, 10, std::bind(&executive_teleop::MoveFeedbackCallback,node,std::placeholders::_1));
   }
 
   if (FLAGS_dock || FLAGS_undock) {
     std::string topic_name = ACTION_BEHAVIORS_DOCK;
     topic_name += "/feedback";
-    dock_sub = nh.subscribe(topic_name, 10, &DockFeedbackCallback);
+    dock_sub = node->create_subscription<ff_msgs::action::Dock_FeedbackMessage>(topic_name, 10, std::bind(&executive_teleop::DockFeedbbackCallback,node,std::placeholders::_1));
     // Hacky time out
     int dock_count = 0;
     while (dock_sub.getNumPublishers() == 0) {
