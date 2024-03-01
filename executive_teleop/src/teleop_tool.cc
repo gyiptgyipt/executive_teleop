@@ -29,6 +29,7 @@
 #include "rclcpp/rclcpp.hpp"
 
 #include <tf2_ros/transform_listener.h>
+#include <tf2_ros/buffer.h>
 
 #include <ff_msgs/msg/ack_stamped.hpp>
 #include <ff_msgs/msg/ack_completed_status.hpp>
@@ -51,7 +52,6 @@
 
 #include <ff_util/ff_flight.h>
 #include <ff_common/ff_names.h>
-
 
 #include "geometry_msgs/msg/transform_stamped.hpp"
 
@@ -93,7 +93,6 @@ bool set_op_limits, send_mob_command, mob_command_finished;
 
 geometry_msgs::msg::TransformStamped tfs;
 // rclcpp::Publisher<ff_msgs::msg::CommandStamped>::SharedPtr cmd_pub; //publisher
-
 
 uint8_t modeMove = 0, modeGetInfo = 0;
 
@@ -753,19 +752,22 @@ int main(int argc, char** argv) {
   // rclcpp::NodeHandle nh(std::string("/") + FLAGS_ns);
 
   // TF2 Subscriber
-  /*auto node = rclcpp::Node::make_shared("simple_move");
-  auto now = node->get_clock()->now();
-  tf2::Duration timeout(static_cast<long int>(10.0));
-  tf2_ros::Buffer tf_buffer(now,timeout,"simple_move");
-  tf2_ros::TransformListener tf_listener(tf_buffer); */
-  tf2_ros::Buffer tf_buffer_;
-  tf2_ros::TransformListener tf_listener(tf_buffer_); 
+  auto node = rclcpp::Node::make_shared("simple_move");
+  auto now = node->get_clock();
+  // tf2::Duration timeout(static_cast<long int>(10.0));
+  // tf2_ros::Buffer tf_buffer(now,timeout,"simple_move");
+  // tf2_ros::TransformListener tf_listener(tf_buffer); 
+  
+  // tf2_ros::Buffer tf_buffer(rclcpp::Clock::SharedPtr now,std::chrono::seconds(),"simple_move");
+  std::shared_ptr<tf2_ros::Buffer> tf2_buffer;
+  tf2_buffer = std::make_shared<tf2_ros::Buffer>(now);
+  tf2_ros::TransformListener tf_listener(*tf2_buffer); 
 
   // Initialize publishers
   // cmd_pub = nh.advertise<ff_msgs::CommandStamped>(TOPIC_COMMAND, 10);
 
   // Initialize subscribers
-  auto node = rclcpp::Node::make_shared("simple_move");
+  // auto node = rclcpp::Node::make_shared("simple_move");
   // rclcpp::Subscriber ack_sub, agent_state_sub, fault_state_sub, dock_sub, move_sub;
 
 
@@ -776,7 +778,7 @@ int main(int argc, char** argv) {
   // Hacky time out
   int count = 0;
   while (ack_sub.getNumPublishers() == 0) {
-    rclcpp::Duration(0.2).sleep();
+        rclcpp::sleep_for(std::chrono::nanoseconds(200000000));
     // Only wait 2 seconds
     if (count == 9) {
       std::cout << "No publisher for acks topics. This tool will not work ";
@@ -790,9 +792,9 @@ int main(int argc, char** argv) {
   if (FLAGS_get_pose || FLAGS_move) {
     std::string ns = FLAGS_ns;
     // Wait for transform listener to start up
-    rclcpp::Duration(1.0).sleep();
+    rclcpp::sleep_for(std::chrono::nanoseconds(1000000000));
     try {
-      tfs = tf_buffer.lookupTransform(std::string(FRAME_NAME_WORLD),
+      tfs = tf2_buffer->lookupTransform(std::string(FRAME_NAME_WORLD),
           (ns.empty() ? "body" : ns + "/" + std::string(FRAME_NAME_BODY)),
           rclcpp::Time(0));
     } catch (tf2::TransformException &ex) {
@@ -843,7 +845,7 @@ int main(int argc, char** argv) {
     // Hacky time out
     int dock_count = 0;
     while (dock_sub.getNumPublishers() == 0) {
-      rclcpp::Duration(0.2).sleep();
+          rclcpp::sleep_for(std::chrono::nanoseconds(200000000));
       // Only wait 2 seconds
       if (dock_count == 9) {
         std::cout << "No publisher for dock feedback. This tool will not work ";
