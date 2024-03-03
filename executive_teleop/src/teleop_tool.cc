@@ -99,7 +99,214 @@ uint8_t modeMove = 0, modeGetInfo = 0;
 class executive_teleop : public rclcpp::Node {
 
 public:
-  executive_teleop():Node("simple_move") {
+  executive_teleop(int argc,char** argv):Node("simple_move") {
+  
+  google::SetUsageMessage("Usage: rosrun executive simple_move <opts>");
+  google::SetVersionString("1.0.0");
+  google::ParseCommandLineFlags(&argc, &argv, true);
+
+  // Initialize booleans
+  get_face_forward = FLAGS_get_face_forward;
+  get_op_limits = FLAGS_get_op_limits;
+  get_planner = FLAGS_get_planner;
+  get_state = FLAGS_get_state;
+  get_faults =  FLAGS_get_faults;
+  reset_bias = FLAGS_reset_bias;
+  reset_ekf = FLAGS_reset_ekf;
+  set_check_zones = false;
+  set_face_forward = false;
+  set_planner = false;
+  set_op_limits = FLAGS_set_op_limits;
+  send_mob_command = false;
+  mob_command_finished = true;
+
+  if (FLAGS_dock) modeMove++;
+  if (FLAGS_move) modeMove++;
+  if (FLAGS_stop) modeMove++;
+  if (FLAGS_undock) modeMove++;
+  if (FLAGS_get_pose) modeGetInfo++;
+  if (FLAGS_get_face_forward) modeGetInfo++;
+  if (FLAGS_get_op_limits) modeGetInfo++;
+  if (FLAGS_get_planner) modeGetInfo++;
+  if (FLAGS_get_state) modeGetInfo++;
+  if (FLAGS_get_faults) modeGetInfo++;
+  if (FLAGS_reset_bias) modeGetInfo++;
+  if (FLAGS_reset_ekf) modeGetInfo++;
+  if (FLAGS_set_check_zones != "") modeGetInfo++;
+  if (FLAGS_set_planner != "") modeGetInfo++;
+  if (FLAGS_set_face_forward != "") modeGetInfo++;
+  if (FLAGS_set_op_limits) modeGetInfo++;
+
+  // Check we have specified one of the required actions
+  if (modeMove == 0 && modeGetInfo == 0) {
+    std::cout << "You must specify a -move, -stop, -undock, -dock, -get_pose, ";
+    std::cout << "-get_face_forward, -get_op_limits, -get_planner, ";
+    std::cout << "-get_state, -get_faults, -reset_bias, or -reset_ekf.\n\n";
+    //return 1;
+  }
+
+  if (modeMove > 1) {
+    std::cout << "You can only specify one -move, -stop, -undock, or -dock\n\n";
+    //return 1;
+  }
+
+  if (modeMove == 1) {
+    send_mob_command = true;
+    mob_command_finished = false;
+  }
+
+  if (FLAGS_move && FLAGS_pos.empty() && FLAGS_att.empty()) {
+    std::cout << "The move flag must also have a pos / att flag\n\n";
+    //return 1;
+  }
+
+  // Check to see if the user set one of the operating limits
+  if (FLAGS_set_op_limits) {
+    if (FLAGS_mode == "" || FLAGS_accel == -1 || FLAGS_alpha == -1 ||
+        FLAGS_omega == -1 || FLAGS_vel == -1) {
+      std::cout << "The set operating limits flag must also have a mode, ";
+      std::cout << "accel, alpha, omega, and vel flag.\n\n";
+      //return 1;
+    }
+  }
+
+  // Check to see if the user specified check zones
+  if (FLAGS_set_check_zones != "") {
+    if (FLAGS_set_check_zones != "on" &&
+      FLAGS_set_check_zones != "off") {
+      std::cout << "The check zones flag must be on or off.\n\n";
+      //return 1;
+    }
+    set_check_zones = true;
+  }
+
+  // Check to see if the user specified face forward mode
+  if (FLAGS_set_face_forward != "") {
+    if (FLAGS_set_face_forward != "on" && FLAGS_set_face_forward != "off") {
+      std::cout << "The face forward flag must be on or off.\n\n";
+      //return 1;
+    }
+    set_face_forward = true;
+  }
+
+  // Check to see if the user specified a planner
+  if (FLAGS_set_planner != "") {
+    set_planner = true;
+  }
+
+  // Create a node handle
+  // rclcpp::NodeHandle nh(std::string("/") + FLAGS_ns);
+
+  // TF2 Subscriber
+  // auto node = rclcpp::Node::make_shared("simple_move");
+  auto now = this->get_clock();
+  // tf2::Duration timeout(static_cast<long int>(10.0));
+  // tf2_ros::Buffer tf_buffer(now,timeout,"simple_move");
+  // tf2_ros::TransformListener tf_listener(tf_buffer); 
+  
+  // tf2_ros::Buffer tf_buffer(rclcpp::Clock::SharedPtr now,std::chrono::seconds(),"simple_move");
+  std::shared_ptr<tf2_ros::Buffer> tf2_buffer;
+  tf2_buffer = std::make_shared<tf2_ros::Buffer>(now);
+  tf2_ros::TransformListener tf_listener(*tf2_buffer); 
+
+  // Initialize publishers
+  // cmd_pub = nh.advertise<ff_msgs::CommandStamped>(TOPIC_COMMAND, 10);
+
+  // Initialize subscribers
+  // auto node = rclcpp::Node::make_shared("simple_move");
+  // rclcpp::Subscriber ack_sub, agent_state_sub, fault_state_sub, dock_sub, move_sub;
+
+  ack_sub = this->create_subscription<ff_msgs::msg::AckStamped>(
+            TOPIC_MANAGEMENT_ACK, 10, std::bind(&executive_teleop::AckCallback, this, std::placeholders::_1));
+
+  // Hacky time out
+  int count = 0;
+  while (ack_sub.getNumPublishers() == 0) {
+        rclcpp::sleep_for(std::chrono::nanoseconds(200000000));
+    // Only wait 2 seconds
+    if (count == 9) {
+      std::cout << "No publisher for acks topics. This tool will not work ";
+      std::cout << "without this.\n\n";
+      //return 1;
+    }
+    count++;
+  }
+
+  // If the user wants to get pose or move, get the current pose of the robot
+  if (FLAGS_get_pose || FLAGS_move) {
+    std::string ns = FLAGS_ns;
+    // Wait for transform listener to start up
+    rclcpp::sleep_for(std::chrono::nanoseconds(1000000000));
+    try {
+      tfs = tf2_buffer->lookupTransform(std::string(FRAME_NAME_WORLD),
+          (ns.empty() ? "body" : ns + "/" + std::string(FRAME_NAME_BODY)),
+          rclcpp::Time(0));
+    } catch (tf2::TransformException &ex) {
+      std::cout << "Could not query the pose of robot: " << ex.what() << "\n\n";
+      //return 1;
+    }
+  }
+
+  if (FLAGS_get_pose) {
+    std::cout << "Pose:\nx: " << tfs.transform.translation.x << "\ny: ";
+    std::cout << tfs.transform.translation.y << "\nz: ";
+    std::cout << tfs.transform.translation.z << "\nRotation:\nx: ";
+    std::cout << tfs.transform.rotation.x << "\ny: ";
+    std::cout << tfs.transform.rotation.y << "\nz: ";
+    std::cout << tfs.transform.rotation.z << "\nw: ";
+    std::cout << tfs.transform.rotation.w << "\n\n";
+
+    // If the user only wanted the pose, exit
+    if (modeMove == 0 && modeGetInfo == 1) {
+      //return 1;
+    }
+  }
+
+  if (FLAGS_get_state || FLAGS_get_face_forward || FLAGS_get_op_limits ||
+      FLAGS_get_planner) {
+    agent_state_sub = this->create_subscription<ff_msgs::msg::AgentStateStamped::SharedPtr>(TOPIC_MANAGEMENT_EXEC_AGENT_STATE,
+                                   10,
+                                   std::bind(&executive_teleop::AgentStateCallback,this,std::placeholders::_1));
+                                    
+  }
+
+  if (FLAGS_get_faults) {
+    fault_state_sub = this->create_subscription<ff_msgs::msg::FaultState::SharedPtr>(TOPIC_MANAGEMENT_SYS_MONITOR_STATE,
+                                   10,
+                                    std::bind(&executive_teleop::FaultStateCallback,this,std::placeholders::_1));
+  }
+
+  if (FLAGS_move) {
+    std::string topic_name = ACTION_MOBILITY_MOTION;
+    topic_name += "/feedback";
+    move_sub = this->create_subscription<ff_msgs::action::Motion_FeedbackMessage::SharedPtr>(topic_name, 10, std::bind(&executive_teleop::MoveFeedbackCallback,this,std::placeholders::_1));
+  }
+
+  if (FLAGS_dock || FLAGS_undock) {
+    std::string topic_name = ACTION_BEHAVIORS_DOCK;
+    topic_name += "/feedback";
+    dock_sub = this->create_subscription<ff_msgs::action::Dock_FeedbackMessage::SharedPtr>(topic_name, 10, std::bind(&executive_teleop::DockFeedbbackCallback,this,std::placeholders::_1));
+    // Hacky time out
+    int dock_count = 0;
+    while (dock_sub.getNumPublishers() == 0) {
+          rclcpp::sleep_for(std::chrono::nanoseconds(200000000));
+      // Only wait 2 seconds
+      if (dock_count == 9) {
+        std::cout << "No publisher for dock feedback. This tool will not work ";
+        std::cout << "without this.\n\n";
+        //return 1;
+      }
+      dock_count++;
+    }
+  }
+
+  if (!SendNextCommand()) {
+    //return 1;
+  }
+
+
+
+
     cmd_pub = this->create_publisher<ff_msgs::msg::CommandStamped>(TOPIC_COMMAND,10);
   }
 
@@ -110,10 +317,10 @@ bool Finished() {
       !get_faults && !reset_bias && !reset_ekf && !set_check_zones &&
       !set_face_forward && !set_planner && !set_op_limits &&
       mob_command_finished) {
-    return true;
+    //return true;
   }
 
-  return false;
+  //return false;
 }
 
 void AgentStateCallback(ff_msgs::msg::AgentStateStamped const& state) {
@@ -368,7 +575,7 @@ bool SendMobilityCommand() {
       } else {
         std::cout << "\nInvalid axis-angle format pass to -att. One or four ";
         std::cout << "elements required. Aborting!\n";
-        return false;
+        //return false;
       }
     }
   }
@@ -388,7 +595,7 @@ bool SendMobilityCommand() {
   send_mob_command = false;
   std::cout << "\nStarted " << cmd.cmd_id << " command. It may take some time ";
   std::cout << "to complete.\n";
-  return true;
+  //return true;
 }
 
 bool SendResetBias() {
@@ -403,7 +610,7 @@ bool SendResetBias() {
   // Change to false so we don't send the command again
   reset_bias = false;
   std::cout << "\nResetting the bias.\n";
-  return true;
+  //return true;
 }
 
 bool SendResetEkf() {
@@ -418,7 +625,7 @@ bool SendResetEkf() {
   // Change to false so we don't send the command again
   reset_ekf = false;
   std::cout << "\nResetting the ekf.\n";
-  return true;
+  //return true;
 }
 
 bool SendSetCheckZones() {
@@ -442,7 +649,7 @@ bool SendSetCheckZones() {
   // Change to false so we don't send the command again
   set_check_zones = false;
   std::cout << "\nSetting check zones.\n";
-  return true;
+  //return true;
 }
 
 bool SendSetFaceForward() {
@@ -471,7 +678,7 @@ bool SendSetFaceForward() {
   // Change to false so we don't send command again
   set_face_forward = false;
   std::cout << "\nSetting holonomic (face forward) mode.\n";
-  return true;
+  //return true;
 }
 
 bool SendSetOpLimits() {
@@ -521,7 +728,7 @@ bool SendSetOpLimits() {
   // Change set op limits to false so we don't send the command again
   set_op_limits = false;
   std::cout << "\nSetting operating limits.\n";
-  return true;
+  //return true;
 }
 
 bool SendSetPlanner() {
@@ -541,7 +748,7 @@ bool SendSetPlanner() {
   // Change to false so we don't send command again
   set_planner = false;
   std::cout << "\nSetting planner.\n";
-  return true;
+  //return true;
 }
 
 bool SendNextCommand() {
@@ -578,7 +785,7 @@ bool SendNextCommand() {
     return SendMobilityCommand();
   }
 
-  return true;
+  //return true;
 }
 
 void AckCallback(ff_msgs::msg::AckStamped const& ack) {
@@ -644,7 +851,12 @@ void DockFeedbackCallback(ff_msgs::action::Dock_FeedbackMessage const& fb) {
   }
 }
 
-rclcpp::Publisher<ff_msgs::msg::CommandStamped>::SharedPtr cmd_pub; //publisher
+  std::shared_ptr<ff_msgs::msg::AckStamped> ack_sub;
+  std::shared_ptr<ff_msgs::msg::AgentStateStamped> agent_state_sub;
+  std::shared_ptr<ff_msgs::msg::FaultState> fault_state_sub;
+  std::shared_ptr<ff_msgs::action::Dock_FeedbackMessage> dock_sub;
+  std::shared_ptr<ff_msgs::action::Motion_FeedbackMessage> move_sub;
+  rclcpp::Publisher<ff_msgs::msg::CommandStamped>::SharedPtr cmd_pub; //publisher
 
 
 };
@@ -655,213 +867,9 @@ int main(int argc, char** argv) {
   rclcpp::init(argc, argv);
 
   // Gather some data from the command
-  google::SetUsageMessage("Usage: rosrun executive simple_move <opts>");
-  google::SetVersionString("1.0.0");
-  google::ParseCommandLineFlags(&argc, &argv, true);
-
-  // Initialize booleans
-  get_face_forward = FLAGS_get_face_forward;
-  get_op_limits = FLAGS_get_op_limits;
-  get_planner = FLAGS_get_planner;
-  get_state = FLAGS_get_state;
-  get_faults =  FLAGS_get_faults;
-  reset_bias = FLAGS_reset_bias;
-  reset_ekf = FLAGS_reset_ekf;
-  set_check_zones = false;
-  set_face_forward = false;
-  set_planner = false;
-  set_op_limits = FLAGS_set_op_limits;
-  send_mob_command = false;
-  mob_command_finished = true;
-
-  if (FLAGS_dock) modeMove++;
-  if (FLAGS_move) modeMove++;
-  if (FLAGS_stop) modeMove++;
-  if (FLAGS_undock) modeMove++;
-  if (FLAGS_get_pose) modeGetInfo++;
-  if (FLAGS_get_face_forward) modeGetInfo++;
-  if (FLAGS_get_op_limits) modeGetInfo++;
-  if (FLAGS_get_planner) modeGetInfo++;
-  if (FLAGS_get_state) modeGetInfo++;
-  if (FLAGS_get_faults) modeGetInfo++;
-  if (FLAGS_reset_bias) modeGetInfo++;
-  if (FLAGS_reset_ekf) modeGetInfo++;
-  if (FLAGS_set_check_zones != "") modeGetInfo++;
-  if (FLAGS_set_planner != "") modeGetInfo++;
-  if (FLAGS_set_face_forward != "") modeGetInfo++;
-  if (FLAGS_set_op_limits) modeGetInfo++;
-
-  // Check we have specified one of the required actions
-  if (modeMove == 0 && modeGetInfo == 0) {
-    std::cout << "You must specify a -move, -stop, -undock, -dock, -get_pose, ";
-    std::cout << "-get_face_forward, -get_op_limits, -get_planner, ";
-    std::cout << "-get_state, -get_faults, -reset_bias, or -reset_ekf.\n\n";
-    return 1;
-  }
-
-  if (modeMove > 1) {
-    std::cout << "You can only specify one -move, -stop, -undock, or -dock\n\n";
-    return 1;
-  }
-
-  if (modeMove == 1) {
-    send_mob_command = true;
-    mob_command_finished = false;
-  }
-
-  if (FLAGS_move && FLAGS_pos.empty() && FLAGS_att.empty()) {
-    std::cout << "The move flag must also have a pos / att flag\n\n";
-    return 1;
-  }
-
-  // Check to see if the user set one of the operating limits
-  if (FLAGS_set_op_limits) {
-    if (FLAGS_mode == "" || FLAGS_accel == -1 || FLAGS_alpha == -1 ||
-        FLAGS_omega == -1 || FLAGS_vel == -1) {
-      std::cout << "The set operating limits flag must also have a mode, ";
-      std::cout << "accel, alpha, omega, and vel flag.\n\n";
-      return 1;
-    }
-  }
-
-  // Check to see if the user specified check zones
-  if (FLAGS_set_check_zones != "") {
-    if (FLAGS_set_check_zones != "on" &&
-      FLAGS_set_check_zones != "off") {
-      std::cout << "The check zones flag must be on or off.\n\n";
-      return 1;
-    }
-    set_check_zones = true;
-  }
-
-  // Check to see if the user specified face forward mode
-  if (FLAGS_set_face_forward != "") {
-    if (FLAGS_set_face_forward != "on" && FLAGS_set_face_forward != "off") {
-      std::cout << "The face forward flag must be on or off.\n\n";
-      return 1;
-    }
-    set_face_forward = true;
-  }
-
-  // Check to see if the user specified a planner
-  if (FLAGS_set_planner != "") {
-    set_planner = true;
-  }
-
-  // Create a node handle
-  // rclcpp::NodeHandle nh(std::string("/") + FLAGS_ns);
-
-  // TF2 Subscriber
-  auto node = rclcpp::Node::make_shared("simple_move");
-  auto now = node->get_clock();
-  // tf2::Duration timeout(static_cast<long int>(10.0));
-  // tf2_ros::Buffer tf_buffer(now,timeout,"simple_move");
-  // tf2_ros::TransformListener tf_listener(tf_buffer); 
-  
-  // tf2_ros::Buffer tf_buffer(rclcpp::Clock::SharedPtr now,std::chrono::seconds(),"simple_move");
-  std::shared_ptr<tf2_ros::Buffer> tf2_buffer;
-  tf2_buffer = std::make_shared<tf2_ros::Buffer>(now);
-  tf2_ros::TransformListener tf_listener(*tf2_buffer); 
-
-  // Initialize publishers
-  // cmd_pub = nh.advertise<ff_msgs::CommandStamped>(TOPIC_COMMAND, 10);
-
-  // Initialize subscribers
-  // auto node = rclcpp::Node::make_shared("simple_move");
-  // rclcpp::Subscriber ack_sub, agent_state_sub, fault_state_sub, dock_sub, move_sub;
-
-
-
-  ack_sub = node->create_subscription<ff_msgs::msg::AckStamped>(TOPIC_MANAGEMENT_ACK, 10,std::bind(&executive_teleop::AckCallback,node,std::placeholders::_1));
-
-
-  // Hacky time out
-  int count = 0;
-  while (ack_sub.getNumPublishers() == 0) {
-        rclcpp::sleep_for(std::chrono::nanoseconds(200000000));
-    // Only wait 2 seconds
-    if (count == 9) {
-      std::cout << "No publisher for acks topics. This tool will not work ";
-      std::cout << "without this.\n\n";
-      return 1;
-    }
-    count++;
-  }
-
-  // If the user wants to get pose or move, get the current pose of the robot
-  if (FLAGS_get_pose || FLAGS_move) {
-    std::string ns = FLAGS_ns;
-    // Wait for transform listener to start up
-    rclcpp::sleep_for(std::chrono::nanoseconds(1000000000));
-    try {
-      tfs = tf2_buffer->lookupTransform(std::string(FRAME_NAME_WORLD),
-          (ns.empty() ? "body" : ns + "/" + std::string(FRAME_NAME_BODY)),
-          rclcpp::Time(0));
-    } catch (tf2::TransformException &ex) {
-      std::cout << "Could not query the pose of robot: " << ex.what() << "\n\n";
-      return 1;
-    }
-  }
-
-  if (FLAGS_get_pose) {
-    std::cout << "Pose:\nx: " << tfs.transform.translation.x << "\ny: ";
-    std::cout << tfs.transform.translation.y << "\nz: ";
-    std::cout << tfs.transform.translation.z << "\nRotation:\nx: ";
-    std::cout << tfs.transform.rotation.x << "\ny: ";
-    std::cout << tfs.transform.rotation.y << "\nz: ";
-    std::cout << tfs.transform.rotation.z << "\nw: ";
-    std::cout << tfs.transform.rotation.w << "\n\n";
-
-    // If the user only wanted the pose, exit
-    if (modeMove == 0 && modeGetInfo == 1) {
-      return 1;
-    }
-  }
-
-  if (FLAGS_get_state || FLAGS_get_face_forward || FLAGS_get_op_limits ||
-      FLAGS_get_planner) {
-    agent_state_sub = node->create_subscription<ff_msgs::msg::AgentStateStamped >(TOPIC_MANAGEMENT_EXEC_AGENT_STATE,
-                                   10,
-                                   std::bind(&executive_teleop::AgentStateCallback,node,std::placeholders::_1));
-                                    
-  }
-
-  if (FLAGS_get_faults) {
-    fault_state_sub = node->create_subscription<ff_msgs::msg::FaultState>(TOPIC_MANAGEMENT_SYS_MONITOR_STATE,
-                                   10,
-                                    std::bind(&executive_teleop::FaultStateCallback,node,std::placeholders::_1));
-  }
-
-  if (FLAGS_move) {
-    std::string topic_name = ACTION_MOBILITY_MOTION;
-    topic_name += "/feedback";
-    move_sub = node->create_subscription<ff_msgs::action::Motion_FeedbackMessage>(topic_name, 10, std::bind(&executive_teleop::MoveFeedbackCallback,node,std::placeholders::_1));
-  }
-
-  if (FLAGS_dock || FLAGS_undock) {
-    std::string topic_name = ACTION_BEHAVIORS_DOCK;
-    topic_name += "/feedback";
-    dock_sub = node->create_subscription<ff_msgs::action::Dock_FeedbackMessage>(topic_name, 10, std::bind(&executive_teleop::DockFeedbbackCallback,node,std::placeholders::_1));
-    // Hacky time out
-    int dock_count = 0;
-    while (dock_sub.getNumPublishers() == 0) {
-          rclcpp::sleep_for(std::chrono::nanoseconds(200000000));
-      // Only wait 2 seconds
-      if (dock_count == 9) {
-        std::cout << "No publisher for dock feedback. This tool will not work ";
-        std::cout << "without this.\n\n";
-        return 1;
-      }
-      dock_count++;
-    }
-  }
-
-  if (!SendNextCommand()) {
-    return 1;
-  }
-
+ 
   // Synchronous mode
-  rclcpp::spin();
+  rclcpp::spin(std::make_shared<executive_teleop>(argc,argv));
 
   // Finish commandline flags
   google::ShutDownCommandLineFlags();

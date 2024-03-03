@@ -1,0 +1,657 @@
+In file included from [01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:26[m[K:
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:64:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   64 | [01;31m[KDEFINE_bool[m[K(dock, false, "Send dock command");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:64:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   64 | [01;31m[KDEFINE_bool[m[K(dock, false, "Send dock command");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:64:1:[m[K [01;31m[Kerror: [m[Kusing-declaration for non-member at class scope
+   64 | [01;31m[KDEFINE_bool[m[K(dock, false, "Send dock command");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:65:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   65 | [01;31m[KDEFINE_bool[m[K(get_face_forward, false, "Get face forward mode");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:65:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   65 | [01;31m[KDEFINE_bool[m[K(get_face_forward, false, "Get face forward mode");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:65:1:[m[K [01;31m[Kerror: [m[Kusing-declaration for non-member at class scope
+   65 | [01;31m[KDEFINE_bool[m[K(get_face_forward, false, "Get face forward mode");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:66:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   66 | [01;31m[KDEFINE_bool[m[K(get_faults, false, "Get current faults");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:66:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   66 | [01;31m[KDEFINE_bool[m[K(get_faults, false, "Get current faults");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:66:1:[m[K [01;31m[Kerror: [m[Kusing-declaration for non-member at class scope
+   66 | [01;31m[KDEFINE_bool[m[K(get_faults, false, "Get current faults");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:67:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   67 | [01;31m[KDEFINE_bool[m[K(get_op_limits, false, "Get operating limits");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:67:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   67 | [01;31m[KDEFINE_bool[m[K(get_op_limits, false, "Get operating limits");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:67:1:[m[K [01;31m[Kerror: [m[Kusing-declaration for non-member at class scope
+   67 | [01;31m[KDEFINE_bool[m[K(get_op_limits, false, "Get operating limits");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:68:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   68 | [01;31m[KDEFINE_bool[m[K(get_planner, false, "Get current planner");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:68:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   68 | [01;31m[KDEFINE_bool[m[K(get_planner, false, "Get current planner");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:68:1:[m[K [01;31m[Kerror: [m[Kusing-declaration for non-member at class scope
+   68 | [01;31m[KDEFINE_bool[m[K(get_planner, false, "Get current planner");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:69:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   69 | [01;31m[KDEFINE_bool[m[K(get_pose, false, "Get current robot position");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:69:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   69 | [01;31m[KDEFINE_bool[m[K(get_pose, false, "Get current robot position");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:69:1:[m[K [01;31m[Kerror: [m[Kusing-declaration for non-member at class scope
+   69 | [01;31m[KDEFINE_bool[m[K(get_pose, false, "Get current robot position");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:70:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   70 | [01;31m[KDEFINE_bool[m[K(get_state, false, "Get current robot state");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:70:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   70 | [01;31m[KDEFINE_bool[m[K(get_state, false, "Get current robot state");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:70:1:[m[K [01;31m[Kerror: [m[Kusing-declaration for non-member at class scope
+   70 | [01;31m[KDEFINE_bool[m[K(get_state, false, "Get current robot state");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:71:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   71 | [01;31m[KDEFINE_bool[m[K(move, false, "Send move command");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:71:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   71 | [01;31m[KDEFINE_bool[m[K(move, false, "Send move command");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:71:1:[m[K [01;31m[Kerror: [m[Kusing-declaration for non-member at class scope
+   71 | [01;31m[KDEFINE_bool[m[K(move, false, "Send move command");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:72:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   72 | [01;31m[KDEFINE_bool[m[K(set_op_limits, false, "Send set operating limits");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:72:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   72 | [01;31m[KDEFINE_bool[m[K(set_op_limits, false, "Send set operating limits");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:72:1:[m[K [01;31m[Kerror: [m[Kusing-declaration for non-member at class scope
+   72 | [01;31m[KDEFINE_bool[m[K(set_op_limits, false, "Send set operating limits");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:73:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   73 | [01;31m[KDEFINE_bool[m[K(stop, false, "Send stop command");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:73:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   73 | [01;31m[KDEFINE_bool[m[K(stop, false, "Send stop command");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:73:1:[m[K [01;31m[Kerror: [m[Kusing-declaration for non-member at class scope
+   73 | [01;31m[KDEFINE_bool[m[K(stop, false, "Send stop command");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:74:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   74 | [01;31m[KDEFINE_bool[m[K(undock, false, "Send undock command");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:74:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   74 | [01;31m[KDEFINE_bool[m[K(undock, false, "Send undock command");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:74:1:[m[K [01;31m[Kerror: [m[Kusing-declaration for non-member at class scope
+   74 | [01;31m[KDEFINE_bool[m[K(undock, false, "Send undock command");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:75:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   75 | [01;31m[KDEFINE_bool[m[K(relative, false, "Position is relative to current point");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:75:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   75 | [01;31m[KDEFINE_bool[m[K(relative, false, "Position is relative to current point");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:75:1:[m[K [01;31m[Kerror: [m[Kusing-declaration for non-member at class scope
+   75 | [01;31m[KDEFINE_bool[m[K(relative, false, "Position is relative to current point");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:76:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   76 | [01;31m[KDEFINE_bool[m[K(reset_bias, false, "Send initialize bias command");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:76:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   76 | [01;31m[KDEFINE_bool[m[K(reset_bias, false, "Send initialize bias command");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:76:1:[m[K [01;31m[Kerror: [m[Kusing-declaration for non-member at class scope
+   76 | [01;31m[KDEFINE_bool[m[K(reset_bias, false, "Send initialize bias command");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:77:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   77 | [01;31m[KDEFINE_bool[m[K(reset_ekf, false, "Send reset ekf command");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:77:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   77 | [01;31m[KDEFINE_bool[m[K(reset_ekf, false, "Send reset ekf command");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:77:1:[m[K [01;31m[Kerror: [m[Kusing-declaration for non-member at class scope
+   77 | [01;31m[KDEFINE_bool[m[K(reset_ekf, false, "Send reset ekf command");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:79:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   79 | [01;31m[KDEFINE_double[m[K(accel, -1.0, "Desired acceleration");
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:79:1:[m[K [01;31m[Kerror: [m[K‘[01m[KfLD[m[K’ has not been declared
+   79 | [01;31m[KDEFINE_double[m[K(accel, -1.0, "Desired acceleration");
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:80:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   80 | [01;31m[KDEFINE_double[m[K(alpha, -1.0, "Desired angular acceleration");
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:80:1:[m[K [01;31m[Kerror: [m[K‘[01m[KfLD[m[K’ has not been declared
+   80 | [01;31m[KDEFINE_double[m[K(alpha, -1.0, "Desired angular acceleration");
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:81:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   81 | [01;31m[KDEFINE_double[m[K(omega, -1.0, "Desired angular velocity");
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:81:1:[m[K [01;31m[Kerror: [m[K‘[01m[KfLD[m[K’ has not been declared
+   81 | [01;31m[KDEFINE_double[m[K(omega, -1.0, "Desired angular velocity");
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:82:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   82 | [01;31m[KDEFINE_double[m[K(vel, -1.0, "Desired velocity");
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:82:1:[m[K [01;31m[Kerror: [m[K‘[01m[KfLD[m[K’ has not been declared
+   82 | [01;31m[KDEFINE_double[m[K(vel, -1.0, "Desired velocity");
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:83:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   83 | [01;31m[KDEFINE_double[m[K(collision_distance, -1.0, "Desired collision distance");
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:83:1:[m[K [01;31m[Kerror: [m[K‘[01m[KfLD[m[K’ has not been declared
+   83 | [01;31m[KDEFINE_double[m[K(collision_distance, -1.0, "Desired collision distance");
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:85:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   85 | [01;31m[KDEFINE_int32[m[K(berth, 1, "Berth to dock in");
+      | [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:85:1:[m[K [01;31m[Kerror: [m[K‘[01m[KfLI[m[K’ has not been declared
+   85 | [01;31m[KDEFINE_int32[m[K(berth, 1, "Berth to dock in");
+      | [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:87:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   87 | [01;31m[KDEFINE_string[m[K(att, "", "Desired attitude in angle-axis format 'angle X Y Z'");
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:87:1:[m[K [01;31m[Kerror: [m[Kusing-declaration for non-member at class scope
+   87 | [01;31m[KDEFINE_string[m[K(att, "", "Desired attitude in angle-axis format 'angle X Y Z'");
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:88:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   88 | [01;31m[KDEFINE_string[m[K(set_check_zones, "", "Enable keepout zone checking");
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:88:1:[m[K [01;31m[Kerror: [m[Kusing-declaration for non-member at class scope
+   88 | [01;31m[KDEFINE_string[m[K(set_check_zones, "", "Enable keepout zone checking");
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:89:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   89 | [01;31m[KDEFINE_string[m[K(set_face_forward, "", "Plan in face-forward mode, on or off");
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:89:1:[m[K [01;31m[Kerror: [m[Kusing-declaration for non-member at class scope
+   89 | [01;31m[KDEFINE_string[m[K(set_face_forward, "", "Plan in face-forward mode, on or off");
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:90:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   90 | [01;31m[KDEFINE_string[m[K(mode, "", "Flight mode");
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:90:1:[m[K [01;31m[Kerror: [m[Kusing-declaration for non-member at class scope
+   90 | [01;31m[KDEFINE_string[m[K(mode, "", "Flight mode");
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:91:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   91 | [01;31m[KDEFINE_string[m[K(ns, "", "Robot namespace");
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:91:1:[m[K [01;31m[Kerror: [m[Kusing-declaration for non-member at class scope
+   91 | [01;31m[KDEFINE_string[m[K(ns, "", "Robot namespace");
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:92:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   92 | [01;31m[KDEFINE_string[m[K(set_planner, "", "Path planning algorithm");
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:92:1:[m[K [01;31m[Kerror: [m[Kusing-declaration for non-member at class scope
+   92 | [01;31m[KDEFINE_string[m[K(set_planner, "", "Path planning algorithm");
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:93:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   93 | [01;31m[KDEFINE_string[m[K(pos, "", "Desired position in cartesian format 'X Y Z'");
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:93:1:[m[K [01;31m[Kerror: [m[Kusing-declaration for non-member at class scope
+   93 | [01;31m[KDEFINE_string[m[K(pos, "", "Desired position in cartesian format 'X Y Z'");
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:[m[K In constructor ‘[01m[Kexecutive_teleop::executive_teleop(int, char**)[m[K’:
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:113:22:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_get_face_forward[m[K’ was not declared in this scope; did you mean ‘[01m[Kget_face_forward[m[K’?
+  113 |   get_face_forward = [01;31m[KFLAGS_get_face_forward[m[K;
+      |                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                      [32m[Kget_face_forward[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:114:19:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_get_op_limits[m[K’ was not declared in this scope; did you mean ‘[01m[Kget_op_limits[m[K’?
+  114 |   get_op_limits = [01;31m[KFLAGS_get_op_limits[m[K;
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |                   [32m[Kget_op_limits[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:115:17:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_get_planner[m[K’ was not declared in this scope; did you mean ‘[01m[Kget_planner[m[K’?
+  115 |   get_planner = [01;31m[KFLAGS_get_planner[m[K;
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                 [32m[Kget_planner[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:116:15:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_get_state[m[K’ was not declared in this scope
+  116 |   get_state = [01;31m[KFLAGS_get_state[m[K;
+      |               [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:117:17:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_get_faults[m[K’ was not declared in this scope; did you mean ‘[01m[Kget_faults[m[K’?
+  117 |   get_faults =  [01;31m[KFLAGS_get_faults[m[K;
+      |                 [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                 [32m[Kget_faults[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:118:16:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_reset_bias[m[K’ was not declared in this scope; did you mean ‘[01m[Kreset_bias[m[K’?
+  118 |   reset_bias = [01;31m[KFLAGS_reset_bias[m[K;
+      |                [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                [32m[Kreset_bias[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:119:15:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_reset_ekf[m[K’ was not declared in this scope
+  119 |   reset_ekf = [01;31m[KFLAGS_reset_ekf[m[K;
+      |               [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:123:19:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_set_op_limits[m[K’ was not declared in this scope; did you mean ‘[01m[Kset_op_limits[m[K’?
+  123 |   set_op_limits = [01;31m[KFLAGS_set_op_limits[m[K;
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |                   [32m[Kset_op_limits[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:127:7:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_dock[m[K’ was not declared in this scope
+  127 |   if ([01;31m[KFLAGS_dock[m[K) modeMove++;
+      |       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:128:7:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_move[m[K’ was not declared in this scope
+  128 |   if ([01;31m[KFLAGS_move[m[K) modeMove++;
+      |       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:129:7:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_stop[m[K’ was not declared in this scope
+  129 |   if ([01;31m[KFLAGS_stop[m[K) modeMove++;
+      |       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:130:7:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_undock[m[K’ was not declared in this scope
+  130 |   if ([01;31m[KFLAGS_undock[m[K) modeMove++;
+      |       [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:131:7:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_get_pose[m[K’ was not declared in this scope
+  131 |   if ([01;31m[KFLAGS_get_pose[m[K) modeGetInfo++;
+      |       [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:139:7:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_set_check_zones[m[K’ was not declared in this scope; did you mean ‘[01m[Kset_check_zones[m[K’?
+  139 |   if ([01;31m[KFLAGS_set_check_zones[m[K != "") modeGetInfo++;
+      |       [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |       [32m[Kset_check_zones[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:140:7:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_set_planner[m[K’ was not declared in this scope; did you mean ‘[01m[Kset_planner[m[K’?
+  140 |   if ([01;31m[KFLAGS_set_planner[m[K != "") modeGetInfo++;
+      |       [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |       [32m[Kset_planner[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:141:7:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_set_face_forward[m[K’ was not declared in this scope; did you mean ‘[01m[Kset_face_forward[m[K’?
+  141 |   if ([01;31m[KFLAGS_set_face_forward[m[K != "") modeGetInfo++;
+      |       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+      |       [32m[Kset_face_forward[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:149:12:[m[K [01;31m[Kerror: [m[Kreturning a value from a constructor
+  149 |     return [01;31m[K1[m[K;
+      |            [01;31m[K^[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:154:12:[m[K [01;31m[Kerror: [m[Kreturning a value from a constructor
+  154 |     return [01;31m[K1[m[K;
+      |            [01;31m[K^[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:162:7:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_move[m[K’ was not declared in this scope
+  162 |   if ([01;31m[KFLAGS_move[m[K && FLAGS_pos.empty() && FLAGS_att.empty()) {
+      |       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:162:21:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_pos[m[K’ was not declared in this scope
+  162 |   if (FLAGS_move && [01;31m[KFLAGS_pos[m[K.empty() && FLAGS_att.empty()) {
+      |                     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:162:42:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_att[m[K’ was not declared in this scope
+  162 |   if (FLAGS_move && FLAGS_pos.empty() && [01;31m[KFLAGS_att[m[K.empty()) {
+      |                                          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:164:12:[m[K [01;31m[Kerror: [m[Kreturning a value from a constructor
+  164 |     return [01;31m[K1[m[K;
+      |            [01;31m[K^[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:169:9:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_mode[m[K’ was not declared in this scope
+  169 |     if ([01;31m[KFLAGS_mode[m[K == "" || FLAGS_accel == -1 || FLAGS_alpha == -1 ||
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:169:29:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_accel[m[K’ was not declared in this scope
+  169 |     if (FLAGS_mode == "" || [01;31m[KFLAGS_accel[m[K == -1 || FLAGS_alpha == -1 ||
+      |                             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:169:50:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_alpha[m[K’ was not declared in this scope
+  169 |     if (FLAGS_mode == "" || FLAGS_accel == -1 || [01;31m[KFLAGS_alpha[m[K == -1 ||
+      |                                                  [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:170:9:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_omega[m[K’ was not declared in this scope
+  170 |         [01;31m[KFLAGS_omega[m[K == -1 || FLAGS_vel == -1) {
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:170:30:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_vel[m[K’ was not declared in this scope
+  170 |         FLAGS_omega == -1 || [01;31m[KFLAGS_vel[m[K == -1) {
+      |                              [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:173:14:[m[K [01;31m[Kerror: [m[Kreturning a value from a constructor
+  173 |       return [01;31m[K1[m[K;
+      |              [01;31m[K^[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:178:7:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_set_check_zones[m[K’ was not declared in this scope; did you mean ‘[01m[Kset_check_zones[m[K’?
+  178 |   if ([01;31m[KFLAGS_set_check_zones[m[K != "") {
+      |       [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |       [32m[Kset_check_zones[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:182:14:[m[K [01;31m[Kerror: [m[Kreturning a value from a constructor
+  182 |       return [01;31m[K1[m[K;
+      |              [01;31m[K^[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:188:7:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_set_face_forward[m[K’ was not declared in this scope; did you mean ‘[01m[Kset_face_forward[m[K’?
+  188 |   if ([01;31m[KFLAGS_set_face_forward[m[K != "") {
+      |       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+      |       [32m[Kset_face_forward[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:191:14:[m[K [01;31m[Kerror: [m[Kreturning a value from a constructor
+  191 |       return [01;31m[K1[m[K;
+      |              [01;31m[K^[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:197:7:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_set_planner[m[K’ was not declared in this scope; did you mean ‘[01m[Kset_planner[m[K’?
+  197 |   if ([01;31m[KFLAGS_set_planner[m[K != "") {
+      |       [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |       [32m[Kset_planner[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:225:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kack_sub[m[K’ was not declared in this scope
+  225 |   [01;31m[Kack_sub[m[K = node->create_subscription<ff_msgs::msg::AckStamped>(TOPIC_MANAGEMENT_ACK, 10,std::bind(&executive_teleop::AckCallback,node,std::placeholders::_1));
+      |   [01;31m[K^~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:236:14:[m[K [01;31m[Kerror: [m[Kreturning a value from a constructor
+  236 |       return [01;31m[K1[m[K;
+      |              [01;31m[K^[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:242:7:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_get_pose[m[K’ was not declared in this scope
+  242 |   if ([01;31m[KFLAGS_get_pose[m[K || FLAGS_move) {
+      |       [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:242:25:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_move[m[K’ was not declared in this scope
+  242 |   if (FLAGS_get_pose || [01;31m[KFLAGS_move[m[K) {
+      |                         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:243:22:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_ns[m[K’ was not declared in this scope
+  243 |     std::string ns = [01;31m[KFLAGS_ns[m[K;
+      |                      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:252:14:[m[K [01;31m[Kerror: [m[Kreturning a value from a constructor
+  252 |       return [01;31m[K1[m[K;
+      |              [01;31m[K^[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:256:7:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_get_pose[m[K’ was not declared in this scope
+  256 |   if ([01;31m[KFLAGS_get_pose[m[K) {
+      |       [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:267:14:[m[K [01;31m[Kerror: [m[Kreturning a value from a constructor
+  267 |       return [01;31m[K1[m[K;
+      |              [01;31m[K^[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:273:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kagent_state_sub[m[K’ was not declared in this scope
+  273 |     [01;31m[Kagent_state_sub[m[K = node->create_subscription<ff_msgs::msg::AgentStateStamped>(TOPIC_MANAGEMENT_EXEC_AGENT_STATE,
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:280:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kfault_state_sub[m[K’ was not declared in this scope
+  280 |     [01;31m[Kfault_state_sub[m[K = node->create_subscription<ff_msgs::msg::FaultState>(TOPIC_MANAGEMENT_SYS_MONITOR_STATE,
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:285:7:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_move[m[K’ was not declared in this scope
+  285 |   if ([01;31m[KFLAGS_move[m[K) {
+      |       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:288:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmove_sub[m[K’ was not declared in this scope
+  288 |     [01;31m[Kmove_sub[m[K = node->create_subscription<ff_msgs::action::Motion_FeedbackMessage>(topic_name, 10, std::bind(&executive_teleop::MoveFeedbackCallback,node,std::placeholders::_1));
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:291:7:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_dock[m[K’ was not declared in this scope
+  291 |   if ([01;31m[KFLAGS_dock[m[K || FLAGS_undock) {
+      |       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:291:21:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_undock[m[K’ was not declared in this scope
+  291 |   if (FLAGS_dock || [01;31m[KFLAGS_undock[m[K) {
+      |                     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:294:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kdock_sub[m[K’ was not declared in this scope
+  294 |     [01;31m[Kdock_sub[m[K = node->create_subscription<ff_msgs::action::Dock_FeedbackMessage>(topic_name, 10, std::bind(&executive_teleop::DockFeedbbackCallback,node,std::placeholders::_1));
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:294:126:[m[K [01;31m[Kerror: [m[K‘[01m[KDockFeedbbackCallback[m[K’ is not a member of ‘[01m[Kexecutive_teleop[m[K’
+  294 | edbackMessage>(topic_name, 10, std::bind(&executive_teleop::[01;31m[KDockFeedbbackCallback[m[K,node,std::placeholders::_1));
+      |                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:303:16:[m[K [01;31m[Kerror: [m[Kreturning a value from a constructor
+  303 |         return [01;31m[K1[m[K;
+      |                [01;31m[K^[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:310:12:[m[K [01;31m[Kerror: [m[Kreturning a value from a constructor
+  310 |     return [01;31m[K1[m[K;
+      |            [01;31m[K^[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:[m[K In member function ‘[01m[Kbool executive_teleop::SendMobilityCommand()[m[K’:
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:466:7:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_dock[m[K’ was not declared in this scope
+  466 |   if ([01;31m[KFLAGS_dock[m[K) {
+      |       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:473:21:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_berth[m[K’ was not declared in this scope
+  473 |     cmd.args[0].i = [01;31m[KFLAGS_berth[m[K;
+      |                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:476:7:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_move[m[K’ was not declared in this scope
+  476 |   if ([01;31m[KFLAGS_move[m[K) {
+      |       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:485:9:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_relative[m[K’ was not declared in this scope
+  485 |     if ([01;31m[KFLAGS_relative[m[K) {
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:486:24:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_ns[m[K’ was not declared in this scope
+  486 |       cmd.args[0].s = ([01;31m[KFLAGS_ns[m[K.empty() ? "body" : FLAGS_ns + "/" + std::string(FRAME_NAME_BODY));
+      |                        [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:499:9:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_relative[m[K’ was not declared in this scope
+  499 |     if ([01;31m[KFLAGS_relative[m[K) {
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:510:27:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_pos[m[K’ was not declared in this scope
+  510 |     std::string str_pos = [01;31m[KFLAGS_pos[m[K;
+      |                           [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:533:9:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_att[m[K’ was not declared in this scope
+  533 |     if ([01;31m[KFLAGS_att[m[K.empty()) {
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:534:11:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_relative[m[K’ was not declared in this scope
+  534 |       if ([01;31m[KFLAGS_relative[m[K) {
+      |           [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:589:7:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_stop[m[K’ was not declared in this scope
+  589 |   if ([01;31m[KFLAGS_stop[m[K) {
+      |       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:594:7:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_undock[m[K’ was not declared in this scope
+  594 |   if ([01;31m[KFLAGS_undock[m[K) {
+      |       [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:[m[K In member function ‘[01m[Kbool executive_teleop::SendSetCheckZones()[m[K’:
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:648:7:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_set_check_zones[m[K’ was not declared in this scope; did you mean ‘[01m[Kset_check_zones[m[K’?
+  648 |   if ([01;31m[KFLAGS_set_check_zones[m[K == "on") {
+      |       [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |       [32m[Kset_check_zones[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:[m[K In member function ‘[01m[Kbool executive_teleop::SendSetFaceForward()[m[K’:
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:675:7:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_set_face_forward[m[K’ was not declared in this scope; did you mean ‘[01m[Kset_face_forward[m[K’?
+  675 |   if ([01;31m[KFLAGS_set_face_forward[m[K == "on") {
+      |       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+      |       [32m[Kset_face_forward[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:[m[K In member function ‘[01m[Kbool executive_teleop::SendSetOpLimits()[m[K’:
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:707:19:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_mode[m[K’ was not declared in this scope
+  707 |   cmd.args[1].s = [01;31m[KFLAGS_mode[m[K;
+      |                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:712:19:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_vel[m[K’ was not declared in this scope
+  712 |   cmd.args[2].f = [01;31m[KFLAGS_vel[m[K;
+      |                   [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:716:19:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_accel[m[K’ was not declared in this scope
+  716 |   cmd.args[3].f = [01;31m[KFLAGS_accel[m[K;
+      |                   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:720:19:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_omega[m[K’ was not declared in this scope
+  720 |   cmd.args[4].f = [01;31m[KFLAGS_omega[m[K;
+      |                   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:724:19:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_alpha[m[K’ was not declared in this scope
+  724 |   cmd.args[5].f = [01;31m[KFLAGS_alpha[m[K;
+      |                   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:728:19:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_collision_distance[m[K’ was not declared in this scope
+  728 |   cmd.args[6].f = [01;31m[KFLAGS_collision_distance[m[K;
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:[m[K In member function ‘[01m[Kbool executive_teleop::SendSetPlanner()[m[K’:
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:751:19:[m[K [01;31m[Kerror: [m[K‘[01m[KFLAGS_set_planner[m[K’ was not declared in this scope; did you mean ‘[01m[Kset_planner[m[K’?
+  751 |   cmd.args[0].s = [01;31m[KFLAGS_set_planner[m[K;
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                   [32m[Kset_planner[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp:32[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:29[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:29[m[K:
+/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp: In instantiation of ‘[01m[Krclcpp::AnySubscriptionCallback<MessageT, AllocatorT> rclcpp::AnySubscriptionCallback<MessageT, AllocatorT>::set(CallbackT) [with CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>; MessageT = ff_msgs::msg::AckStamped_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_factory.hpp:94:32:[m[K   required from ‘[01m[Krclcpp::SubscriptionFactory rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<ROSMessageType> >) [with MessageT = ff_msgs::msg::AckStamped_<std::allocator<void> >; CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void>, ff_msgs::msg::AckStamped_<std::allocator<void> >, ff_msgs::msg::AckStamped_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> >; ROSMessageType = ff_msgs::msg::AckStamped_<std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:122:63:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::detail::create_subscription(NodeParametersT&, NodeTopicsT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = ff_msgs::msg::AckStamped_<std::allocator<void> >; CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void>, ff_msgs::msg::AckStamped_<std::allocator<void> >, ff_msgs::msg::AckStamped_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> >; NodeParametersT = rclcpp::Node; NodeTopicsT = rclcpp::Node; ROSMessageType = ff_msgs::msg::AckStamped_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:191:76:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::create_subscription(NodeT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = ff_msgs::msg::AckStamped_<std::allocator<void> >; CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void>, ff_msgs::msg::AckStamped_<std::allocator<void> >, ff_msgs::msg::AckStamped_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> >; NodeT = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:99:47:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = ff_msgs::msg::AckStamped_<std::allocator<void> >; CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void>, ff_msgs::msg::AckStamped_<std::allocator<void> >, ff_msgs::msg::AckStamped_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:225:64:[m[K   required from here
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:394:27:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::function<void(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>::function(std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>&)[m[K’
+  394 |       callback_variant_ = [01;31m[Kstatic_cast<typename scbth::callback_type>(callback)[m[K;
+      |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/functional:59[m[K,
+                 from [01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:20[m[K:
+[01m[K/usr/include/c++/11/bits/std_function.h:435:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Functor, class _Constraints> std::function<_Res(_ArgTypes ...)>::function(_Functor&&) [with _Functor = _Functor; _Constraints = _Constraints; _Res = void; _ArgTypes = {const ff_msgs::msg::AckStamped_<std::allocator<void> >&}][m[K’
+  435 |         [01;36m[Kfunction[m[K(_Functor&& __f)
+      |         [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:435:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/11/ratio:39[m[K,
+                 from [01m[K/usr/include/c++/11/chrono:39[m[K,
+                 from [01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:19[m[K:
+/usr/include/c++/11/type_traits: In substitution of ‘[01m[Ktemplate<bool _Cond, class _Tp> using __enable_if_t = typename std::enable_if::type [with bool _Cond = false; _Tp = void][m[K’:
+[01m[K/usr/include/c++/11/bits/std_function.h:353:8:[m[K   required by substitution of ‘[01m[Ktemplate<class _Res, class ... _ArgTypes> template<class _Cond, class _Tp> using _Requires = std::__enable_if_t<_Cond::value, _Tp> [with _Cond = std::function<void(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>::_Callable<std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>&, std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>, std::__invoke_result<std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>&, const ff_msgs::msg::AckStamped_<std::allocator<void> >&> >; _Tp = void; _Res = void; _ArgTypes = {const ff_msgs::msg::AckStamped_<std::allocator<void> >&}][m[K’
+[01m[K/usr/include/c++/11/bits/std_function.h:434:9:[m[K   required from ‘[01m[Krclcpp::AnySubscriptionCallback<MessageT, AllocatorT> rclcpp::AnySubscriptionCallback<MessageT, AllocatorT>::set(CallbackT) [with CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>; MessageT = ff_msgs::msg::AckStamped_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_factory.hpp:94:32:[m[K   required from ‘[01m[Krclcpp::SubscriptionFactory rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<ROSMessageType> >) [with MessageT = ff_msgs::msg::AckStamped_<std::allocator<void> >; CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void>, ff_msgs::msg::AckStamped_<std::allocator<void> >, ff_msgs::msg::AckStamped_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> >; ROSMessageType = ff_msgs::msg::AckStamped_<std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:122:63:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::detail::create_subscription(NodeParametersT&, NodeTopicsT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = ff_msgs::msg::AckStamped_<std::allocator<void> >; CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void>, ff_msgs::msg::AckStamped_<std::allocator<void> >, ff_msgs::msg::AckStamped_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> >; NodeParametersT = rclcpp::Node; NodeTopicsT = rclcpp::Node; ROSMessageType = ff_msgs::msg::AckStamped_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:191:76:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::create_subscription(NodeT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = ff_msgs::msg::AckStamped_<std::allocator<void> >; CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void>, ff_msgs::msg::AckStamped_<std::allocator<void> >, ff_msgs::msg::AckStamped_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> >; NodeT = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:99:47:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = ff_msgs::msg::AckStamped_<std::allocator<void> >; CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void>, ff_msgs::msg::AckStamped_<std::allocator<void> >, ff_msgs::msg::AckStamped_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:225:64:[m[K   required from here
+[01m[K/usr/include/c++/11/type_traits:2205:11:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+ 2205 |     using [01;31m[K__enable_if_t[m[K = typename enable_if<_Cond, _Tp>::type;
+      |           [01;31m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/functional:59[m[K,
+                 from [01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:20[m[K:
+/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp: In instantiation of ‘[01m[Krclcpp::AnySubscriptionCallback<MessageT, AllocatorT> rclcpp::AnySubscriptionCallback<MessageT, AllocatorT>::set(CallbackT) [with CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>; MessageT = ff_msgs::msg::AckStamped_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_factory.hpp:94:32:[m[K   required from ‘[01m[Krclcpp::SubscriptionFactory rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<ROSMessageType> >) [with MessageT = ff_msgs::msg::AckStamped_<std::allocator<void> >; CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void>, ff_msgs::msg::AckStamped_<std::allocator<void> >, ff_msgs::msg::AckStamped_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> >; ROSMessageType = ff_msgs::msg::AckStamped_<std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:122:63:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::detail::create_subscription(NodeParametersT&, NodeTopicsT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = ff_msgs::msg::AckStamped_<std::allocator<void> >; CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void>, ff_msgs::msg::AckStamped_<std::allocator<void> >, ff_msgs::msg::AckStamped_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> >; NodeParametersT = rclcpp::Node; NodeTopicsT = rclcpp::Node; ROSMessageType = ff_msgs::msg::AckStamped_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:191:76:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::create_subscription(NodeT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = ff_msgs::msg::AckStamped_<std::allocator<void> >; CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void>, ff_msgs::msg::AckStamped_<std::allocator<void> >, ff_msgs::msg::AckStamped_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> >; NodeT = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:99:47:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = ff_msgs::msg::AckStamped_<std::allocator<void> >; CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void>, ff_msgs::msg::AckStamped_<std::allocator<void> >, ff_msgs::msg::AckStamped_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AckStamped_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:225:64:[m[K   required from here
+[01m[K/usr/include/c++/11/bits/std_function.h:404:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::function<_Res(_ArgTypes ...)>::function(std::function<_Res(_ArgTypes ...)>&&) [with _Res = void; _ArgTypes = {const ff_msgs::msg::AckStamped_<std::allocator<void> >&}][m[K’
+  404 |       [01;36m[Kfunction[m[K(function&& __x) noexcept
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:404:27:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>[m[K’ to ‘[01m[Kstd::function<void(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>&&[m[K’
+  404 |       function([01;36m[Kfunction&& __x[m[K) noexcept
+      |                [01;36m[K~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:386:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::function<_Res(_ArgTypes ...)>::function(const std::function<_Res(_ArgTypes ...)>&) [with _Res = void; _ArgTypes = {const ff_msgs::msg::AckStamped_<std::allocator<void> >&}][m[K’
+  386 |       [01;36m[Kfunction[m[K(const function& __x)
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:386:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>[m[K’ to ‘[01m[Kconst std::function<void(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>&[m[K’
+  386 |       function([01;36m[Kconst function& __x[m[K)
+      |                [01;36m[K~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:375:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::function<_Res(_ArgTypes ...)>::function(std::nullptr_t) [with _Res = void; _ArgTypes = {const ff_msgs::msg::AckStamped_<std::allocator<void> >&}; std::nullptr_t = std::nullptr_t][m[K’
+  375 |       [01;36m[Kfunction[m[K(nullptr_t) noexcept
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:375:16:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AckStamped_<std::allocator<void> >&)>[m[K’ to ‘[01m[Kstd::nullptr_t[m[K’
+  375 |       function([01;36m[Knullptr_t[m[K) noexcept
+      |                [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:368:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::function<_Res(_ArgTypes ...)>::function() [with _Res = void; _ArgTypes = {const ff_msgs::msg::AckStamped_<std::allocator<void> >&}][m[K’
+  368 |       [01;36m[Kfunction[m[K() noexcept
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:368:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp:32[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:29[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:29[m[K:
+/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp: In instantiation of ‘[01m[Krclcpp::AnySubscriptionCallback<MessageT, AllocatorT> rclcpp::AnySubscriptionCallback<MessageT, AllocatorT>::set(CallbackT) [with CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AgentStateStamped_<std::allocator<void> >&)>; MessageT = ff_msgs::msg::AgentStateStamped_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_factory.hpp:94:32:[m[K   required from ‘[01m[Krclcpp::SubscriptionFactory rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<ROSMessageType> >) [with MessageT = ff_msgs::msg::AgentStateStamped_<std::allocator<void> >; CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AgentStateStamped_<std::allocator<void> >&)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<ff_msgs::msg::AgentStateStamped_<std::allocator<void> >, std::allocator<void>, ff_msgs::msg::AgentStateStamped_<std::allocator<void> >, ff_msgs::msg::AgentStateStamped_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AgentStateStamped_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AgentStateStamped_<std::allocator<void> >, std::allocator<void> >; ROSMessageType = ff_msgs::msg::AgentStateStamped_<std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AgentStateStamped_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:122:63:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::detail::create_subscription(NodeParametersT&, NodeTopicsT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = ff_msgs::msg::AgentStateStamped_<std::allocator<void> >; CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AgentStateStamped_<std::allocator<void> >&)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<ff_msgs::msg::AgentStateStamped_<std::allocator<void> >, std::allocator<void>, ff_msgs::msg::AgentStateStamped_<std::allocator<void> >, ff_msgs::msg::AgentStateStamped_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AgentStateStamped_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AgentStateStamped_<std::allocator<void> >, std::allocator<void> >; NodeParametersT = rclcpp::Node; NodeTopicsT = rclcpp::Node; ROSMessageType = ff_msgs::msg::AgentStateStamped_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AgentStateStamped_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:191:76:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::create_subscription(NodeT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = ff_msgs::msg::AgentStateStamped_<std::allocator<void> >; CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AgentStateStamped_<std::allocator<void> >&)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<ff_msgs::msg::AgentStateStamped_<std::allocator<void> >, std::allocator<void>, ff_msgs::msg::AgentStateStamped_<std::allocator<void> >, ff_msgs::msg::AgentStateStamped_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AgentStateStamped_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AgentStateStamped_<std::allocator<void> >, std::allocator<void> >; NodeT = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AgentStateStamped_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:99:47:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = ff_msgs::msg::AgentStateStamped_<std::allocator<void> >; CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AgentStateStamped_<std::allocator<void> >&)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<ff_msgs::msg::AgentStateStamped_<std::allocator<void> >, std::allocator<void>, ff_msgs::msg::AgentStateStamped_<std::allocator<void> >, ff_msgs::msg::AgentStateStamped_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AgentStateStamped_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AgentStateStamped_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::AgentStateStamped_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:273:81:[m[K   required from here
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:394:27:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::function<void(const ff_msgs::msg::AgentStateStamped_<std::allocator<void> >&)>::function(std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AgentStateStamped_<std::allocator<void> >&)>&)[m[K’
+  394 |       callback_variant_ = [01;31m[Kstatic_cast<typename scbth::callback_type>(callback)[m[K;
+      |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/functional:59[m[K,
+                 from [01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:20[m[K:
+[01m[K/usr/include/c++/11/bits/std_function.h:435:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Functor, class _Constraints> std::function<_Res(_ArgTypes ...)>::function(_Functor&&) [with _Functor = _Functor; _Constraints = _Constraints; _Res = void; _ArgTypes = {const ff_msgs::msg::AgentStateStamped_<std::allocator<void> >&}][m[K’
+  435 |         [01;36m[Kfunction[m[K(_Functor&& __f)
+      |         [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:435:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/c++/11/bits/std_function.h:404:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::function<_Res(_ArgTypes ...)>::function(std::function<_Res(_ArgTypes ...)>&&) [with _Res = void; _ArgTypes = {const ff_msgs::msg::AgentStateStamped_<std::allocator<void> >&}][m[K’
+  404 |       [01;36m[Kfunction[m[K(function&& __x) noexcept
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:404:27:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AgentStateStamped_<std::allocator<void> >&)>[m[K’ to ‘[01m[Kstd::function<void(const ff_msgs::msg::AgentStateStamped_<std::allocator<void> >&)>&&[m[K’
+  404 |       function([01;36m[Kfunction&& __x[m[K) noexcept
+      |                [01;36m[K~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:386:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::function<_Res(_ArgTypes ...)>::function(const std::function<_Res(_ArgTypes ...)>&) [with _Res = void; _ArgTypes = {const ff_msgs::msg::AgentStateStamped_<std::allocator<void> >&}][m[K’
+  386 |       [01;36m[Kfunction[m[K(const function& __x)
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:386:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AgentStateStamped_<std::allocator<void> >&)>[m[K’ to ‘[01m[Kconst std::function<void(const ff_msgs::msg::AgentStateStamped_<std::allocator<void> >&)>&[m[K’
+  386 |       function([01;36m[Kconst function& __x[m[K)
+      |                [01;36m[K~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:375:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::function<_Res(_ArgTypes ...)>::function(std::nullptr_t) [with _Res = void; _ArgTypes = {const ff_msgs::msg::AgentStateStamped_<std::allocator<void> >&}; std::nullptr_t = std::nullptr_t][m[K’
+  375 |       [01;36m[Kfunction[m[K(nullptr_t) noexcept
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:375:16:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::AgentStateStamped_<std::allocator<void> >&)>[m[K’ to ‘[01m[Kstd::nullptr_t[m[K’
+  375 |       function([01;36m[Knullptr_t[m[K) noexcept
+      |                [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:368:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::function<_Res(_ArgTypes ...)>::function() [with _Res = void; _ArgTypes = {const ff_msgs::msg::AgentStateStamped_<std::allocator<void> >&}][m[K’
+  368 |       [01;36m[Kfunction[m[K() noexcept
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:368:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp:32[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:29[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:29[m[K:
+/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp: In instantiation of ‘[01m[Krclcpp::AnySubscriptionCallback<MessageT, AllocatorT> rclcpp::AnySubscriptionCallback<MessageT, AllocatorT>::set(CallbackT) [with CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::FaultState_<std::allocator<void> >&)>; MessageT = ff_msgs::msg::FaultState_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_factory.hpp:94:32:[m[K   required from ‘[01m[Krclcpp::SubscriptionFactory rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<ROSMessageType> >) [with MessageT = ff_msgs::msg::FaultState_<std::allocator<void> >; CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::FaultState_<std::allocator<void> >&)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<ff_msgs::msg::FaultState_<std::allocator<void> >, std::allocator<void>, ff_msgs::msg::FaultState_<std::allocator<void> >, ff_msgs::msg::FaultState_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::FaultState_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::FaultState_<std::allocator<void> >, std::allocator<void> >; ROSMessageType = ff_msgs::msg::FaultState_<std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::FaultState_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:122:63:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::detail::create_subscription(NodeParametersT&, NodeTopicsT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = ff_msgs::msg::FaultState_<std::allocator<void> >; CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::FaultState_<std::allocator<void> >&)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<ff_msgs::msg::FaultState_<std::allocator<void> >, std::allocator<void>, ff_msgs::msg::FaultState_<std::allocator<void> >, ff_msgs::msg::FaultState_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::FaultState_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::FaultState_<std::allocator<void> >, std::allocator<void> >; NodeParametersT = rclcpp::Node; NodeTopicsT = rclcpp::Node; ROSMessageType = ff_msgs::msg::FaultState_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::FaultState_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:191:76:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::create_subscription(NodeT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = ff_msgs::msg::FaultState_<std::allocator<void> >; CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::FaultState_<std::allocator<void> >&)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<ff_msgs::msg::FaultState_<std::allocator<void> >, std::allocator<void>, ff_msgs::msg::FaultState_<std::allocator<void> >, ff_msgs::msg::FaultState_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::FaultState_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::FaultState_<std::allocator<void> >, std::allocator<void> >; NodeT = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::FaultState_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:99:47:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = ff_msgs::msg::FaultState_<std::allocator<void> >; CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::FaultState_<std::allocator<void> >&)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<ff_msgs::msg::FaultState_<std::allocator<void> >, std::allocator<void>, ff_msgs::msg::FaultState_<std::allocator<void> >, ff_msgs::msg::FaultState_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::FaultState_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::FaultState_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::msg::FaultState_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:280:74:[m[K   required from here
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:394:27:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::function<void(const ff_msgs::msg::FaultState_<std::allocator<void> >&)>::function(std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::FaultState_<std::allocator<void> >&)>&)[m[K’
+  394 |       callback_variant_ = [01;31m[Kstatic_cast<typename scbth::callback_type>(callback)[m[K;
+      |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/functional:59[m[K,
+                 from [01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:20[m[K:
+[01m[K/usr/include/c++/11/bits/std_function.h:435:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Functor, class _Constraints> std::function<_Res(_ArgTypes ...)>::function(_Functor&&) [with _Functor = _Functor; _Constraints = _Constraints; _Res = void; _ArgTypes = {const ff_msgs::msg::FaultState_<std::allocator<void> >&}][m[K’
+  435 |         [01;36m[Kfunction[m[K(_Functor&& __f)
+      |         [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:435:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/c++/11/bits/std_function.h:404:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::function<_Res(_ArgTypes ...)>::function(std::function<_Res(_ArgTypes ...)>&&) [with _Res = void; _ArgTypes = {const ff_msgs::msg::FaultState_<std::allocator<void> >&}][m[K’
+  404 |       [01;36m[Kfunction[m[K(function&& __x) noexcept
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:404:27:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::FaultState_<std::allocator<void> >&)>[m[K’ to ‘[01m[Kstd::function<void(const ff_msgs::msg::FaultState_<std::allocator<void> >&)>&&[m[K’
+  404 |       function([01;36m[Kfunction&& __x[m[K) noexcept
+      |                [01;36m[K~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:386:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::function<_Res(_ArgTypes ...)>::function(const std::function<_Res(_ArgTypes ...)>&) [with _Res = void; _ArgTypes = {const ff_msgs::msg::FaultState_<std::allocator<void> >&}][m[K’
+  386 |       [01;36m[Kfunction[m[K(const function& __x)
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:386:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::FaultState_<std::allocator<void> >&)>[m[K’ to ‘[01m[Kconst std::function<void(const ff_msgs::msg::FaultState_<std::allocator<void> >&)>&[m[K’
+  386 |       function([01;36m[Kconst function& __x[m[K)
+      |                [01;36m[K~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:375:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::function<_Res(_ArgTypes ...)>::function(std::nullptr_t) [with _Res = void; _ArgTypes = {const ff_msgs::msg::FaultState_<std::allocator<void> >&}; std::nullptr_t = std::nullptr_t][m[K’
+  375 |       [01;36m[Kfunction[m[K(nullptr_t) noexcept
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:375:16:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::msg::FaultState_<std::allocator<void> >&)>[m[K’ to ‘[01m[Kstd::nullptr_t[m[K’
+  375 |       function([01;36m[Knullptr_t[m[K) noexcept
+      |                [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:368:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::function<_Res(_ArgTypes ...)>::function() [with _Res = void; _ArgTypes = {const ff_msgs::msg::FaultState_<std::allocator<void> >&}][m[K’
+  368 |       [01;36m[Kfunction[m[K() noexcept
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:368:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp:32[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:29[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:29[m[K:
+/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp: In instantiation of ‘[01m[Krclcpp::AnySubscriptionCallback<MessageT, AllocatorT> rclcpp::AnySubscriptionCallback<MessageT, AllocatorT>::set(CallbackT) [with CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >&)>; MessageT = ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_factory.hpp:94:32:[m[K   required from ‘[01m[Krclcpp::SubscriptionFactory rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<ROSMessageType> >) [with MessageT = ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >; CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >&)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >, std::allocator<void>, ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >, ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >, std::allocator<void> >; ROSMessageType = ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:122:63:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::detail::create_subscription(NodeParametersT&, NodeTopicsT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >; CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >&)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >, std::allocator<void>, ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >, ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >, std::allocator<void> >; NodeParametersT = rclcpp::Node; NodeTopicsT = rclcpp::Node; ROSMessageType = ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:191:76:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::create_subscription(NodeT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >; CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >&)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >, std::allocator<void>, ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >, ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >, std::allocator<void> >; NodeT = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:99:47:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >; CallbackT = std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >&)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >, std::allocator<void>, ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >, ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:288:82:[m[K   required from here
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:394:27:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::function<void(const ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >&)>::function(std::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >&)>&)[m[K’
+  394 |       callback_variant_ = [01;31m[Kstatic_cast<typename scbth::callback_type>(callback)[m[K;
+      |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/functional:59[m[K,
+                 from [01m[K/home/zyme/ros_ws/executive_teleop/executive_teleop/src/teleop_tool.cc:20[m[K:
+[01m[K/usr/include/c++/11/bits/std_function.h:435:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Functor, class _Constraints> std::function<_Res(_ArgTypes ...)>::function(_Functor&&) [with _Functor = _Functor; _Constraints = _Constraints; _Res = void; _ArgTypes = {const ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >&}][m[K’
+  435 |         [01;36m[Kfunction[m[K(_Functor&& __f)
+      |         [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:435:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/c++/11/bits/std_function.h:404:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::function<_Res(_ArgTypes ...)>::function(std::function<_Res(_ArgTypes ...)>&&) [with _Res = void; _ArgTypes = {const ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >&}][m[K’
+  404 |       [01;36m[Kfunction[m[K(function&& __x) noexcept
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:404:27:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >&)>[m[K’ to ‘[01m[Kstd::function<void(const ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >&)>&&[m[K’
+  404 |       function([01;36m[Kfunction&& __x[m[K) noexcept
+      |                [01;36m[K~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:386:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::function<_Res(_ArgTypes ...)>::function(const std::function<_Res(_ArgTypes ...)>&) [with _Res = void; _ArgTypes = {const ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >&}][m[K’
+  386 |       [01;36m[Kfunction[m[K(const function& __x)
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:386:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >&)>[m[K’ to ‘[01m[Kconst std::function<void(const ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >&)>&[m[K’
+  386 |       function([01;36m[Kconst function& __x[m[K)
+      |                [01;36m[K~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:375:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::function<_Res(_ArgTypes ...)>::function(std::nullptr_t) [with _Res = void; _ArgTypes = {const ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >&}; std::nullptr_t = std::nullptr_t][m[K’
+  375 |       [01;36m[Kfunction[m[K(nullptr_t) noexcept
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:375:16:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (executive_teleop::*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>))(const ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >&)>[m[K’ to ‘[01m[Kstd::nullptr_t[m[K’
+  375 |       function([01;36m[Knullptr_t[m[K) noexcept
+      |                [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:368:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::function<_Res(_ArgTypes ...)>::function() [with _Res = void; _ArgTypes = {const ff_msgs::action::Motion_FeedbackMessage_<std::allocator<void> >&}][m[K’
+  368 |       [01;36m[Kfunction[m[K() noexcept
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:368:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+gmake[2]: *** [CMakeFiles/teleop_tool.dir/build.make:76: CMakeFiles/teleop_tool.dir/src/teleop_tool.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/teleop_tool.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
